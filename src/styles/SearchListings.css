@@ -1,0 +1,62 @@
+/* Container for SearchListings */
+.search-listings-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Listings Section (Left) */
+.listings-section {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.listing-card {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.listing-image {
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.listing-info {
+    flex: 1;
+}
+
+.listing-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.price {
+    color: #ff385c;
+}
+
+/* Map Section (Right) */
+.map-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
