@@ -1,0 +1,79 @@
+/* General Styles */
+/* Black Background for Entire Section */
+.homepage-section {
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  /* Ensures all text remains visible */
+  min-height: 100vh;
+  /* Covers the entire height of the viewport */
+  width: 100%;
+}
+
+/* Optional: Ensure components are centered */
+.homepage-section>* {
+  margin: 0 auto;
+  max-width: 1200px;
+  /* Center content with a max width */
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Search Section */
+.search-section {
+  flex: 1;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Big Card Section */
+.big-card-section {
+  flex: 2;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+
+  .search-section,
+  .big-card-section {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .search-section,
+  .big-card-section {
+    padding: 10px;
+  }
+}

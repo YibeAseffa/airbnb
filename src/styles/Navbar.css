@@ -1,0 +1,98 @@
+/* Base Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    /* Center aligns the middle section */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    /* For fixed logo and right section */
+    flex-wrap: wrap;
+    /* Enables wrapping on smaller screens */
+    height: 60px;
+    /* Ensure consistent height */
+}
+
+/* Fixed Logo Section */
+.navbar-logo {
+    position: absolute;
+    left: 20px;
+    /* Fixed to the left */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Vertically center it */
+}
+
+.navbar-logo .logo {
+    height: 40px;
+}
+
+/* Responsive Pages Section */
+.navbar-pages {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    /* Allows links to grow and take available space */
+    justify-content: center;
+    /* Center the links */
+}
+
+.navbar-pages a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.navbar-pages a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Fixed Right Section */
+.navbar-right {
+    position: absolute;
+    right: 20px;
+    /* Fixed to the right */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Vertically center it */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.host-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar-pages {
+        flex-direction: column;
+        /* Stack links vertically */
+        gap: 10px;
+        text-align: center;
+        /* Center-align text */
+    }
+
+    .navbar {
+        height: auto;
+        /* Allow dynamic height */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-pages a {
+        font-size: 14px;
+        /* Slightly smaller font size */
+    }
+}
