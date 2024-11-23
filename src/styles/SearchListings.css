@@ -1,4 +1,10 @@
 /* Container for SearchListings */
+
+.standard-search{
+    display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+}
 .search-listings-container {
     display: flex;
     gap: 20px;
@@ -14,12 +20,15 @@
 
 .listing-card {
     display: flex;
+    flex-direction: row;
     gap: 15px;
     margin-bottom: 20px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    /* Enables positioning for the heart icon */
 }
 
 .listing-image {
@@ -34,29 +43,102 @@
 }
 
 .listing-footer {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: bold;
+display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
 }
 
 .price {
-    color: #ff385c;
+    color: var(--gray-700, #374151);
+        /* text-lg/Medium */
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 28px;
+        /* 155.556% */
+        display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
 }
 
 /* Map Section (Right) */
 .map-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    width: 600px;
+        height: 652px;
+        flex-shrink: 0;
 }
 
 .map-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: 1px solid #ddd;
+width: 600px;
+    height: 652px;
+    flex-shrink: 0;
+}
+
+.listing-title{
+color: var(--gray-700, #374151);
+    /* text-xl/Medium */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    /* 160% */
+    align-self: stretch;
+}
+.subtitle{
+    align-self: stretch;
+color: var(--gray-500, #6B7280);
+    /* text-sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+.description{
+    align-self: left;
+    color: var(--gray-500, #6B7280);
+        /* text-sm/Regular */
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        
+       
+}
+
+.rating{
+display: flex;
+    align-items: center;
+    gap: 4px;
+    flex: 1 0 0;
+}
+
+/* Heart Icon */
+.heart-icon {
+   
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.heart-icon:hover {
+    color: #ff385c;
+    /* Changes color when hovered */
+}
+
+.listing-header{
+    display: flex;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        
 }

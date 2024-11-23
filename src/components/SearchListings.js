@@ -1,11 +1,11 @@
-
-import React from 'react'
+import React from "react";
 import "../styles/SearchListings.css";
-//Import static images from local storage 
-import map from "../assets/map.PNG" 
-import list1image from "../assets/list1.PNG" 
-import list2image from "../assets/list2.PNG" 
-import list3image from "../assets/list3.PNG"; 
+import { FaRegHeart } from "react-icons/fa";
+//Import static images from local storage
+import map from "../assets/map.PNG";
+import list1image from "../assets/list1.PNG";
+import list2image from "../assets/list2.PNG";
+import list3image from "../assets/list3.PNG";
 const SearchListings = () => {
   //Example of search result listings can be fetched using api
   const listings = [
@@ -52,13 +52,20 @@ const SearchListings = () => {
               className="listing-image"
             />
             <div className="listing-info">
-              <h3>{listing.title}</h3>
-              <p>{listing.description}</p>
+              <div className="listing-header">
+                <p className="subtitle">
+                  Entire home in Brodeux
+                  <FaRegHeart className="heart-icon" />
+                </p>
+              </div>
+              <h3 className="listing-title">{listing.title}</h3>
+
+              <p className="description">{listing.description}</p>
               <div className="listing-footer">
-                <span className="price">{listing.price}</span>
                 <span className="rating">
                   ⭐ {listing.rating} ({listing.reviews} reviews)
                 </span>
+                <span className="price">{listing.price}</span>
               </div>
             </div>
           </div>
@@ -66,9 +73,8 @@ const SearchListings = () => {
       </div>
 
       <div className="map-section">
-       
         <img
-        src={map }  //map image from local storage, use api Here 
+          src={map} //map image from local storage, use api Here
           alt="Map Placeholder"
           className="map-image"
         />

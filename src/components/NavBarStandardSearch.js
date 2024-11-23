@@ -1,11 +1,13 @@
 import React from "react";
 import "../styles/NavBarStandardSearch.css";
+
 import {
   FaSearch,
   FaBars,
   FaUserCircle,
   FaGlobe,
   FaFilter,
+  FaChevronDown,
 } from "react-icons/fa";
 
 const NavBarStandardSearch = () => {
@@ -59,14 +61,28 @@ const NavBarStandardSearch = () => {
         {/* Right Section */}
         <div className="navbar-right">
           <span className="host-link">Become a Host</span>
+
           <FaGlobe className="icon globe-icon" />
-          <FaBars className="icon bars-icon" />
-          <FaUserCircle className="icon user-icon" />
+          <div className="profile-dropdown">
+            <FaBars className="icon bars-icon" />
+            <FaUserCircle className="icon user-icon" />
+          </div>
         </div>
       </nav>
 
       {/* Filters Section */}
       <div className="filters-container">
+        <div className="dropdown">
+          <select className="dropdown-select">
+            <option>Price</option>
+          </select>
+        </div>
+
+        <div className="dropdown">
+          <select className="dropdown-select">
+            <option>Type of place</option>
+          </select>
+        </div>
         {filters.map((filter, index) => (
           <button key={index} className="filter-button">
             {filter}
