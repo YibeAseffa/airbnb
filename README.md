@@ -12,3 +12,9 @@ Check version compatability as:
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.28.0",
+
+Components for homepage first section are:
+
+1. Navbar
+2. AirbnbSearch
+3. BigCard
