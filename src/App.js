@@ -1,3 +1,22 @@
+// //Testing for Listing component only
+
+// import React from "react";
+// import "./styles/App.css";
+
+// import Listing from "./components/Listing";
+
+// function App() {
+//   return (
+//     <div className="app">
+//       <Listing />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// Testing for StandardSearch component only
+
 import React from "react";
 import "./styles/App.css";
 
@@ -11,18 +30,7 @@ function App() {
   );
 }
 
-export default App;
-
-
-
-
-
-
-
-
-
-
-
+// export default App;
 
 //Homepage components only
 
@@ -54,4 +62,3 @@ export default App;
 // }
 
 // export default App;
-

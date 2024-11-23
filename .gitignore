@@ -5,6 +5,26 @@
 /.pnp
 .pnp.js
 
+/src/components/AirbnbListingNavBar.js
+/src/components/Listing.js
+/src/components/BigCard.js
+/src/components/Homepage.js
+/src/components/AirbnbSearch.js
+/src/components/SearchListings.js
+/src/components/NavBar.js
+
+
+/src/styles/AirbnbListingNavBar.css
+/src/styles/Listing.css
+/src/styles/BigCard.css
+/src/styles/Homepage.css
+/src/styles/AirbnbSearch.css
+/src/styles/SearchListings.css
+/src/styles/NavBar.css
+
+
+
+
 # testing
 /coverage
 
