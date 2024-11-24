@@ -1,0 +1,656 @@
+/* General Container */
+
+.listing-contents-container {
+display: flex;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+    width: 100%;
+    padding-top: 40px;
+}
+.listing-title {
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
+}
+
+.listing-subtitle {
+color: var(--black, #000);
+
+    /* text-sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+/* Right Section */
+.header-right {
+  display: flex;
+width: 56px;
+height: 56px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+border-radius: 1000px;
+}
+
+.host-profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.header-container {
+display: flex;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+.header-left {
+    flex: 1;
+}
+/* Left Section */
+.listing-contents-left {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        flex: 1 0 0;
+}
+
+.listing-details h2 {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex: 1 0 0;
+}
+.listing-details{
+    display: flex;
+        align-items: center;
+        gap: 24px;
+        align-self: stretch;
+}
+.listing-details p {
+display: flex;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.host-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.features-list li {
+    margin-bottom: 10px;
+}
+
+.description {
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+width: 670px;color: var(--black, #000);
+
+    /* text-base/Regular */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.description a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.description a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Responsive Fix for Listing Contents */
+@media screen and (max-width: 768px) {
+    .listing-contents-container {
+        margin-top: 20px;
+    }
+}
+
+/* General Styles for Listing Contents */
+.listing-contents-container {
+    padding: 20px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Detail Section */
+.details-section {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+}
+
+.details-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.detail-icon {
+    font-size: 24px;
+    color:black;
+    flex-shrink: 0;
+}
+
+.details-list h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.details-list p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.details-list a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.details-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* General Layout */
+.listing-contents-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Pricing Card */
+.pricing-card-container {
+
+    display: flex;
+    flex-direction: column;
+       
+    width: 350px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Pricing Header */
+.pricing-header {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin-bottom: 10px;;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.per-night {
+    font-size: 16px;
+    color: #666;
+}
+
+.rating {
+    color: var(--black, #000);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        /* 142.857% */
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+}
+
+.star-icon {
+    color: #ff385c;
+    margin-right: 5px;
+}
+
+.reviews {
+color: var(--black, #000);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 142.857% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.reviews:hover {
+    text-decoration: underline;
+}
+
+/* Reservation Form */
+.reservation-form {
+    padding-top: 20px;
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 8px;
+        border: 1px solid var(--gray-300, #D1D5DB);
+        background: var(--white, #FFF);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+align-self: stretch;
+color: var(--black, #000);
+
+    /* text-xxs/Medium */
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    /* 160% */
+}
+
+input,
+select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.reserve-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff385c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reserve-button:hover {
+    background-color: #e0284e;
+}
+
+.reservation-note {
+    align-self: stretch;
+color: var(--gray-500, #6B7280);
+    text-align: center;
+
+    /* text-sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+/* Pricing Breakdown */
+.pricing-details {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.pricing-details p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Report Link */
+.report-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.report-link a {
+    color: var(--gray-500, #6B7280);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+report-icon
+
+.report-link a:hover {
+    text-decoration: underline;
+}
+
+
+/* Where You'll Sleep Section */
+.where-youll-sleep-section {
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.section-title {
+    width: 670px;
+    color: var(--black, #000);
+    
+        /* text-2xl/Medium */
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px;
+        /* 133.333% */
+}
+
+.sleeping-arrangement {
+    display: flex;
+        width: 320px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+}
+
+.sleeping-image {
+height: 212px;
+    align-self: stretch;
+    border-radius: 8px;
+    
+        background: url("../assets/bedroom.png") lightgray 50% / cover no-repeat;
+    
+    
+}
+
+.sleeping-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bedroom-title {
+align-self: stretch;
+color: var(--black, #000);
+
+    /* text-base/Medium */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 24px */
+}
+
+.bed-details {
+align-self: stretch;
+color: var(--black, #000);
+
+    /* text-sm/Regular */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+}
+
+
+@media screen and (max-width: 768px) {
+    .listing-contents-container {
+        grid-template-columns: 1fr;
+        /* Stack left and right sections */
+    }
+
+    .pricing-card-container {
+        width: 100%;
+        /* Full width for smaller screens */
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sleeping-arrangement {
+        flex-direction: column;
+        /* Stack image and text */
+        align-items: center;
+    }
+
+    .sleeping-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .sleeping-details {
+        text-align: center;
+    }
+}
+/* What this place offers Section */
+.what-place-offers {
+    margin-top: 30px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.amenity-icon {
+    font-size: 18px;
+    color: #333;
+}
+
+.show-all-amenities-btn {
+display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+        border: 1px solid var(--black, #000);
+        background: var(--white, #FFF);
+    
+        /* shadow-base */
+        box-shadow: 0px 1px 2px 0px rgba(31, 41, 55, 0.08);
+}
+
+.show-all-amenities-btn:hover {
+    background-color: #f7f7f7;
+}
+
+/* Calendar Section */
+.calendar-section {
+       display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      
+       
+        margin-top: 30px;
+}
+
+.section-title {
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+}
+.subtitle{
+    align-self: stretch;
+    color: var(--gray-500, #6B7280);
+    
+        /* text-sm/Regular */
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        /* 142.857% */
+}
+.calendars-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.calendar {
+    width: 50%;
+    /* Make each calendar take half the width */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-footer {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+.calendar-clear{
+color: var(--black, #000);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 142.857% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.calendar-keyboard{
+    width: 24px;
+        height: 24px;
+}
+.calendar-clear:hover {
+    color: #0056b3;
+}
+
+/* Highlight Preselected Dates */
+.highlight {
+    background-color: #ff385c;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .calendars-wrapper {
+        flex-direction: column;
+        /* Stack calendars on smaller screens */
+        gap: 10px;
+    }
+
+    .calendar {
+        width: 100%;
+        /* Full width for each calendar */
+    }
+}
+/* Divider Styling */
+.section-divider {
+    border: none;
+    /* Remove the default border */
+    border-top: 1px solid #ddd;
+    /* Add a light border */
+    margin: 20px 0;
+    /* Space above and below the divider */
+    width: 100%;
+    /* Full width */
+}
+
