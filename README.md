@@ -17,6 +17,25 @@ Check version compatability as:
     "react-router-dom": "^6.28.0",
 
 
+
+
+Components for Homepage are:
+
+1. components/Homepage.js
+2. components/Navbar.js
+3. components/AirbnbSearch.js
+4. components/Inspirations.js
+5. components/AirbnbFooter.js
+
+Note: Each Component has its own CSS file inside 
+
+-- styles/component-name.css
+
+
+
+
+
+
 Components for Listings are:
 
 1. components/Listing.js
@@ -28,3 +47,6 @@ Components for Listings are:
 7. components/AirbnbFooter.js
 
 
+Note: Each Component has its own CSS file inside 
+
+-- styles/component-name.css

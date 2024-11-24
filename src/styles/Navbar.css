@@ -1,49 +1,44 @@
 /* Base Styles */
 .navbar {
-    display: flex;
-    justify-content: center;
-    /* Center aligns the middle section */
+display: flex;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
-    position: relative;
-    /* For fixed logo and right section */
-    flex-wrap: wrap;
-    /* Enables wrapping on smaller screens */
-    height: 60px;
-    /* Ensure consistent height */
+    gap: 24px;
+    align-self: stretch;
 }
 
 /* Fixed Logo Section */
 .navbar-logo {
-    position: absolute;
-    left: 20px;
-    /* Fixed to the left */
-    top: 50%;
-    transform: translateY(-50%);
-    /* Vertically center it */
+display: flex;
+    height: 32px;
+    padding-right: 100.347px;
+    align-items: center;
+    flex: 1 0 0;
 }
 
 .navbar-logo .logo {
     height: 40px;
 }
 
+
 /* Responsive Pages Section */
 .navbar-pages {
-    display: flex;
-    gap: 20px;
-    flex: 1;
-    /* Allows links to grow and take available space */
-    justify-content: center;
-    /* Center the links */
+display: flex;
+    align-items: flex-start;
+    gap: 32px;
+   
 }
 
 .navbar-pages a {
+    font-family: Inter;
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     padding: 5px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 4px;
+line-height: 24px;
 }
 
 .navbar-pages a:hover {
@@ -52,21 +47,30 @@
 
 /* Fixed Right Section */
 .navbar-right {
-    position: absolute;
-    right: 20px;
-    /* Fixed to the right */
-    top: 50%;
-    transform: translateY(-50%);
-    /* Vertically center it */
-    display: flex;
+display: flex;
+    justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
+    flex: 1 0 0;
 }
-
+.profile-dropdown{
+    display: flex;
+        padding: 8px 8px 8px 16px;
+        align-items: center;
+        gap: 8px;
+        border-radius: 100px;
+            background: var(--white, #d3cccc);
+}
 .host-link {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
+color: var(--white, #FFF);
+
+    /* text-sm/Medium */
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    /* 142.857% */
 }
 
 .icon {
@@ -95,4 +99,7 @@
         font-size: 14px;
         /* Slightly smaller font size */
     }
+}
+svg.globe-icon{
+    color:white;
 }

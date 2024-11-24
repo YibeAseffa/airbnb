@@ -1,19 +1,19 @@
 //Testing for Listing component only
 
-import React from "react";
-import "./styles/App.css";
+// import React from "react";
+// import "./styles/App.css";
 
-import Listing from "./components/Listing";
+// import Listing from "./components/Listing";
 
-function App() {
-  return (
-    <div className="app">
-      <Listing />
-    </div>
-  );
-}
+// function App() {
+//   return (
+//     <div className="app">
+//       <Listing />
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
 
 //Testing for StandardSearch component only
 
@@ -34,31 +34,18 @@ export default App;
 
 //Homepage components only
 
-// import logo from './logo.svg';
-// import './styles/App.css';
-// import React from "react";
-// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import Navbar from './components/Navbar';
-// import AirbnbSearch from './components/AirbnbSearch';
-// import BigCard from './components/BigCard';
+import React from "react";
+import Homepage from "./components/Homepage"; // Import the Homepage component
+import "./styles/App.css"; // General styles for the application
 
-// function App() {
-//   return (
-//     <Router>
-//         <div className="homepage-section">
-//       <Navbar />
-//       <AirbnbSearch />
-//         <BigCard />
-//         </div>
-//       <Routes>
-//         <Route path="/" element={<h1>Home Page</h1>} />
-//         {/* <Route path="/places-to-stay" element={<PlacesToStay />} />
-//             <Route path="/experiences" element={<Experiences />} />
-//             <Route path="/online-experiences" element={<OnlineExperiences />} />
-//             <Route path="/host" element={<h1>Host Page</h1>} /> */}
-//       </Routes>
-//     </Router>
-//   );
-// }
+function App() {
+  return (
+    <div className="App">
+      {/* Render the Homepage component directly */}
+      <Homepage />
+    </div>
+  );
+}
 
-// export default App;
+export default App;
+

@@ -1,6 +1,6 @@
 .airbnb-footer {
 display: flex;
-    padding: 64px 160px 24px 160px;
+    padding: 64px 160px 80px 160px;
     flex-direction: column;
     align-items: flex-start;
     gap: 48px;

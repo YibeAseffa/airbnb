@@ -1,0 +1,116 @@
+/* General Homepage Styling */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
+    overflow-x: hidden;
+   
+  
+
+
+    
+}
+
+/* Section 1 */
+.section-1 {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+   
+    padding: 16px 80px 96px 80px;
+    
+    background: var(--black, #000);
+   
+    box-sizing: border-box;/* Include padding in width/height calculations */
+    position: relative;
+
+}
+
+.section-2{
+
+    flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        width: 100%;
+    
+        padding: 16px 80px 96px 80px;
+    
+     
+    
+        box-sizing: border-box;
+        /* Include padding in width/height calculations */
+        position: relative;
+        background: var(--white, #FFF);
+}
+
+
+
+
+
+.frame-section {
+display: flex;
+height: 640px;
+justify-content: center;
+align-items: center;
+align-self: stretch;
+}
+
+.big-card {
+position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.big-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+ 
+}
+
+.big-card-content {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.big-card-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.big-card-button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    background-color: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.big-card-button:hover {
+    background-color: #e0314a;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .section-1 {
+        padding: 16px;
+        /* Reduce padding for smaller screens */
+    }
+
+    .big-card-content h1 {
+        font-size: 2rem;
+        /* Adjust font size for smaller screens */
+    }
+}
+  
